@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust - Discover Amazing Destinations</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">Wanderlust</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero" id="home">
+      <div class="carousel-container">
+        <div
+          class="carousel-slide active"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80');
+          "
+        ></div>
+        <div
+          class="carousel-slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1539650116574-75c0c6d73c6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2341&q=80');
+          "
+        ></div>
+        <div
+          class="carousel-slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2335&q=80');
+          "
+        ></div>
+        <div
+          class="carousel-slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80');
+          "
+        ></div>
+      </div>
+
+      <button class="carousel-arrow prev" onclick="changeSlide(-1)">❮</button>
+      <button class="carousel-arrow next" onclick="changeSlide(1)">❯</button>
+
+      <div class="hero-content">
+        <h1>Discover Your Next Adventure</h1>
+        <p>
+          Explore breathtaking destinations around the world with our curated
+          travel experiences
+        </p>
+        <a href="#destinations" class="cta-button">Start Exploring</a>
+      </div>
+
+      <div class="carousel-controls">
+        <div class="carousel-dot active" onclick="currentSlide(1)"></div>
+        <div class="carousel-dot" onclick="currentSlide(2)"></div>
+        <div class="carousel-dot" onclick="currentSlide(3)"></div>
+        <div class="carousel-dot" onclick="currentSlide(4)"></div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="destinations">
+      <div class="container">
+        <h2 class="section-title">Why Choose Wanderlust?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h3>Global Destinations</h3>
+            <p>
+              Discover hidden gems and popular destinations across all
+              continents with our expert-curated travel guides.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⭐</div>
+            <h3>Premium Experiences</h3>
+            <p>
+              Enjoy luxury accommodations, exclusive tours, and personalized
+              service that makes every trip unforgettable.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h3>Best Price Guarantee</h3>
+            <p>
+              Get the best deals on flights, hotels, and packages with our price
+              match guarantee and exclusive discounts.
+            </p>
+          </div>
+        </div>
+
+        <!-- Expandable Section for Future Features -->
+        <div class="expandable-section">
+          <h3>🚀 More Features Coming Soon</h3>
+          <div class="card-body">
+            <div class="brand-kits">
+              <div class="brand-title">Brand Kits</div>
+
+              <!-- ECorp -->
+              <div class="brand-card">
+                <div class="left">
+                  <input type="checkbox" id="e1" />
+                  <label
+                    for="e1"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      cursor: pointer;
+                    "
+                  >
+                    <div class="circle-group">
+                      <div
+                        class="circle left"
+                        style="background-color: #00c2a8"
+                      ></div>
+                      <!-- Green -->
+                      <div class="circle center"></div>
+                      <div class="circle right"></div>
+                    </div>
+                    <span class="brand-name">ECorp</span>
+                  </label>
+                </div>
+                <div class="settings-icon">&#9881;</div>
+              </div>
+
+              <!-- ICorp -->
+              <div class="brand-card">
+                <div class="left">
+                  <input type="checkbox" id="e2" />
+                  <label
+                    for="e2"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      cursor: pointer;
+                    "
+                  >
+                    <div class="circle-group">
+                      <div
+                        class="circle left"
+                        style="background-color: #ffa500"
+                      ></div>
+                      <!-- Orange -->
+                      <div class="circle center"></div>
+                      <div class="circle right"></div>
+                    </div>
+                    <span class="brand-name">ICorp</span>
+                  </label>
+                </div>
+                <div class="settings-icon">&#9881;</div>
+              </div>
+
+              <!-- The Agency -->
+              <div class="brand-card">
+                <div class="left">
+                  <input type="checkbox" id="e3" checked />
+                  <label
+                    for="e3"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      cursor: pointer;
+                    "
+                  >
+                    <div class="circle-group">
+                      <div
+                        class="circle left"
+                        style="background-color: #ff3b3b"
+                      ></div>
+                      <!-- Red -->
+                      <div class="circle center"></div>
+                      <div class="circle right"></div>
+                    </div>
+                    <span class="brand-name">The Agency</span>
+                  </label>
+                </div>
+                <div class="settings-icon">&#9881;</div>
+              </div>
+            </div>
+            <!-- Caraousel switch  -->
+          </div>
+
+          <div>
+              <div class="h-screen w-screen grid place-items-center">
+    <div class="max-w-xl w-full flex gap-1 h-[500px] ">
+      <div class="card1 w-full basis-1/2 bg-cover bg-center h-full p-2 flex group flex-col justify-between">
+        <p class="font-serif tracking-tight italic">NEW</p>
+        <button class="bg-white text-xl font-semibold text-black w-full py-2 self-end invisible transition-500 group-hover:visible">ADD TO CART +</button>
+      </div>
+      <div class="card2 w-full basis-1/2 bg-cover bg-center h-full p-2 flex group flex-col justify-between">
+        <p class="font-serif tracking-tight italic">NEW</p>
+        <button class="bg-white text-xl font-semibold text-black w-full py-2 self-end invisible transition-500 group-hover:visible">ADD TO CART +</button>
+      </div>
+    </div>
+  </div>
+          </div>
+
+          <p>
+            • Social travel community • Real-time travel updates • Custom
+            itinerary builder
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2025 Wanderlust. All rights reserved. | Crafted with ❤️ for
+        travelers
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
